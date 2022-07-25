@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Dashboard",
+    "icon": "dashboard",
+    "rout": "/"
+  },
+  {
+    "label": "Open Account",
+    "icon": "add-user",
+    "rout": "/open-account"
+  },
+  {
+    "label": "Deposit & Withdraw",
+    "icon": "arrows",
+    "rout": "/deposit-withdraw"
+  },
+  {
+    "label": "Trading History",
+    "icon": "rating",
+    "rout": "/trading-history"
+  },
+  {
+    "label": "IB Partnership",
+    "icon": "handshake",
+    "rout": "/ib-partnership"
+  },
+  {
+    "label": "Investments & Fund Mgmt",
+    "icon": "hand-with-coins",
+    "rout": "/investments-fund-mgmt"
+  }
+]

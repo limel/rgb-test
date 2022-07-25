@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  position: relative;
+  z-index: 2;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.arrow {
+  transition: 0.3s all;
+}
+
+.optionsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  left: -1px;
+  width: calc(100% + 2px);
+  border: 1px solid var(--border-color);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+}
+
+.active {
+  border-radius: 8px 8px 0 0;
+  .arrow {
+    transform: rotate(180deg);
+  }
+  .optionsList {
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,54 @@
+@import "styles/mixins.scss";
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  width: 55%;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: var(--secondary-bg);
+  overflow: hidden;
+  &_icon {
+    width: 44%;
+    position: relative;
+    z-index: 1;
+    .card__text {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  &__text {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0;
+  }
+  &__button {
+    @include button($width: 135px);
+  }
+  &__icon {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+  }
+}

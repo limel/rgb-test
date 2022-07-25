@@ -1,0 +1,20 @@
+@mixin button($width: 114px, $height: 32px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  color: #fff;
+  min-width: $width;
+  min-height: $height;
+  background-color: var(--accent-color-primary);
+  transition: 0.3s all;
+  &:hover,
+  &:focus {
+    filter: brightness(1.2);
+  }
+}
